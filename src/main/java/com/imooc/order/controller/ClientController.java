@@ -12,8 +12,8 @@ public class ClientController {
 //    @Autowired
 //    private LoadBalancerClient loadBalancerClient;
 
-    @Autowired
-    private RestTemplate restTemplate;
+//    @Autowired
+//    private RestTemplate restTemplate;
 
     @GetMapping("/getProductMsg")
     public String getProductMsg() {
@@ -28,9 +28,10 @@ public class ClientController {
 //        String response = restTemplate.getForObject(url, String.class);
 
         //3. 第三种方式(利用@LoadBalanced, 可在restTemplate里使用应用名字)
-        String response = restTemplate.getForObject("http://PRODUCT/msg", String.class);
-
-        log.info("response={}", response);
-        return response;
+//        String response = restTemplate.getForObject("http://PRODUCT/msg", String.class);
+//
+//        log.info("response={}", response);
+//        return response;
+        return null;
     }
 }
