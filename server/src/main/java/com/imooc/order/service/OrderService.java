@@ -10,4 +10,9 @@ public interface OrderService {
      * @return
      */
     OrderDTO create(OrderDTO orderDTO);
+
+    /**
+     * 完结订单
+     */
+    OrderDTO finish(String orderId);
 }
